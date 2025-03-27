@@ -1,0 +1,114 @@
+#app {
+    height: 100%;
+}
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #ffffff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 80%;
+    height: 100%;
+    margin: 0 2rem;
+    margin: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: 32rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50px;
+    background: #fffdfd;
+}
+
+.slide-container {
+    position: relative; /* Ensure the parent container is positioned */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.slide-container:hover img {
+    filter: blur(2px) brightness(0.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 42% !important; /* Center vertically and make it important */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to be centered */
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.slide-container:hover .overlay {
+    opacity: 1;
+}
+
+.slide-container a {
+    display: block; /* Ensure the anchor tag is a block element */
+    width: 100%;
+    height: 100%;
+}
+
+.slide-container a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.slide-container:hover a img {
+    filter: blur(2px) brightness(0.2);
+}
+
+.swiper-pagination-bullet {
+    background: black !important; /* Change default color for pagination bullets to black */
+}
+
+.swiper-pagination-bullet-active {
+    background: black; /* Color for the active pagination bullet */
+}
+
+.swiper-pagination {
+    margin-top: 8rem; /* Adjust the bottom position to make pagination lower */
+}
