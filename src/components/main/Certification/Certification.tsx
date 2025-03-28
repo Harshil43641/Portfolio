@@ -10,13 +10,13 @@ export const Certification = () => {
     return (
         <>
             {/* Section Title */}
-            <h2 className="text-3xl mt-8 font-thin font-imfell mb-12 text-center">My Projects</h2>
+            <h2 className="text-3xl mt-8 font-thin font-imfell mb-12 text-center">Certifactions</h2>
 
             {/* Swiper Carousel Component */}
             <Swiper
                 slidesPerView={1}            
                 spaceBetween={10}             
-                pagination={{ clickable: true }}
+                pagination={{ clickable: false }}
                 autoplay={{
                     delay: 2500,              // Delay between slides in milliseconds
                     disableOnInteraction: false, // Continues autoplay after interaction
