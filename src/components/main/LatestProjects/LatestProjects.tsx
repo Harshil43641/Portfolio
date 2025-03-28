@@ -10,7 +10,7 @@ export const LatestProjects = () => {
     return (
         <>
             {/* Section Title */}
-            <h2 className="text-3xl mt-8 font-thin font-imfell mb-12 text-center">My Projects</h2>
+            <h2 className="text-3xl mt-8 font-thin font-imfell mb-12 text-center">My Latest Projects</h2>
 
             {/* Swiper Carousel Component */}
             <Swiper
@@ -19,7 +19,7 @@ export const LatestProjects = () => {
                 pagination={{ clickable: true }}
                 autoplay={{
                     delay: 2500,              // Delay between slides in milliseconds
-                    disableOnInteraction: false, // Continues autoplay after interaction
+                    disableOnInteraction: true, // Continues autoplay after interaction
                 }}
                 modules={[Pagination, Autoplay]} // Registers the pagination and autoplay modules
                 className="mySwiper"          // Custom CSS class for styling

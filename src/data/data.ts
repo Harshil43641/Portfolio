@@ -158,28 +158,28 @@ export const latestProjects = [
 export const Certification = [
     {
         href: "#",
-        imgSrc: "images/Certification/innovance.jpg",
+        imgSrc: "images/Certification/innovance.png",
         imgAlt: "Innovance 3.0 (IOT LAB)",
         overlayText: "Machine Learning Workshop",
         description: "Innovance 3.0",
     },
     {
         href: "#",
-        imgSrc: "images/Certification/AISOC.jpg",
+        imgSrc: "images/Certification/AISOC.png",
         imgAlt: "Artificial Intelligence Student Operated Council",
         overlayText: "Generative AI and Machine Learning Workshop",
         description: "Symposium 2.0",
     },
     {
         href: "#",
-        imgSrc: "images/Certification/K&K.jpg",
+        imgSrc: "images/Certification/K&K.png",
         imgAlt: "Kraya & Kuber",
         overlayText: "Internship with Kraya & Kuber",
         description: "Internship",
     },
     {
         href: "#",
-        imgSrc: "images/Certification/CST.jpg",
+        imgSrc: "images/Certification/CST.png",
         imgAlt: "Cyber Security Internship Training",
         overlayText: "Machine Learning Workshop",
         description: "Cyber Security Internship Training",

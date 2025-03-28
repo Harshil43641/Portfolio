@@ -19,7 +19,7 @@ export const Certification = () => {
                 pagination={{ clickable: false }}
                 autoplay={{
                     delay: 2500,              // Delay between slides in milliseconds
-                    disableOnInteraction: false, // Continues autoplay after interaction
+                    disableOnInteraction: true, // Continues autoplay after interaction
                 }}
                 modules={[Pagination, Autoplay]} // Registers the pagination and autoplay modules
                 className="mySwiper"          // Custom CSS class for styling
