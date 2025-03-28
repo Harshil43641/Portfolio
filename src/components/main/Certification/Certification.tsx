@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./styles.css";
 
-export const Cerification = () => {
+export const Certification = () => {
     return (
         <>
             {/* Section Title */}

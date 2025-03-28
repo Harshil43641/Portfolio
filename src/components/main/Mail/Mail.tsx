@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { userData } from "../../../data/data";
 
-export const MailAlice = () => {
+export const Mail = () => {
     const [hover, setHover] = useState(false);
 
     // Reset hover state when component mounts

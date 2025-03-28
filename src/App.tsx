@@ -12,7 +12,7 @@ import {MyAdvantage} from "./components/main/MyAdvantage/MyAdvantage";
 import EducationExperience from "./components/main/EducationExperience/EducationExperience";
 import {LatestProjects} from "./components/main/LatestProjects/LatestProjects";
 import {Mail} from "./components/main/Mail/Mail";
-import {Certification} from "./components/main/Certification/Certification";
+import {Certification}from "./components/main/Certification/Certification";
 
 // Cursor Animation
 import AnimatedCursor from "react-animated-cursor";
