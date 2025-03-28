@@ -1,7 +1,7 @@
 import { Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperContent from "./SwiperContent";
-import { Certification } from "../../../data/data";
+import { Certification as CertificationData } from "../../../data/data";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./styles.css";
@@ -10,7 +10,7 @@ export const Certification = () => {
     return (
         <>
             {/* Section Title */}
-            <h2 className="text-3xl mt-8 font-thin font-imfell mb-12 text-center">My Cerifiations</h2>
+            <h2 className="text-3xl mt-8 font-thin font-imfell mb-12 text-center">My Projects</h2>
 
             {/* Swiper Carousel Component */}
             <Swiper
@@ -38,10 +38,10 @@ export const Certification = () => {
                     },
                 }}
             >
-                {/* Map over the Certificate array to create a slide for each certificate */}
-                {Certification.map((certificate, index) => (
+                {/* Map over the latestProjects array to create a slide for each project */}
+                {CertificationData.map((certificate, index) => (
                     <SwiperSlide key={index}>
-                        {/* SwiperContent component that displays certificate details */}
+                        {/* SwiperContent component that displays project details */}
                         <SwiperContent 
                             href={certificate.href} 
                             imgSrc={certificate.imgSrc} 
