@@ -25,7 +25,7 @@ body {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    height: 32rem;
+    height: 20rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
@@ -112,3 +112,4 @@ body {
 .swiper-pagination {
     margin-top: 8rem; /* Adjust the bottom position to make pagination lower */
 }
+  
