@@ -25,7 +25,7 @@ body {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    height: auto;
+    height: 32rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
@@ -48,20 +48,18 @@ body {
 }
 
 .slide-container {
-    position: relative;
+    position: relative; /* Ensure the parent container is positioned */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    height: auto;
+    height: 100%;
 }
 
 .slide-container img {
     width: 100%;
-    height: 250px;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     transition: filter 0.3s ease;
 }
 
@@ -71,17 +69,15 @@ body {
 
 .overlay {
     position: absolute;
-    top: 42% !important;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 42% !important; /* Center vertically and make it important */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to be centered */
     color: white;
-    font-size: 1rem;
+    font-size: 0.75rem;
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
-    padding: 0.5rem;
-    width: 90%;
 }
 
 .slide-container:hover .overlay {
@@ -89,7 +85,7 @@ body {
 }
 
 .slide-container a {
-    display: block;
+    display: block; /* Ensure the anchor tag is a block element */
     width: 100%;
     height: 100%;
 }
@@ -97,7 +93,7 @@ body {
 .slide-container a img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     transition: filter 0.3s ease;
 }
 
@@ -106,28 +102,13 @@ body {
 }
 
 .swiper-pagination-bullet {
-    background: black !important;
+    background: black !important; /* Change default color for pagination bullets to black */
 }
 
 .swiper-pagination-bullet-active {
-    background: black;
+    background: black; /* Color for the active pagination bullet */
 }
 
 .swiper-pagination {
-    margin-top: 8rem;
-}
-
-.text {
-    margin-top: 1rem;
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-    padding: 0 1rem;
-}
-
-.image-container {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
+    margin-top: 8rem; /* Adjust the bottom position to make pagination lower */
 }
