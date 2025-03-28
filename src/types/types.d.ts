@@ -37,4 +37,5 @@ export interface SwiperContentProps {
     imgAlt: string;
     overlayText: string;
     description: string;
+    onClick?: () => void;
 }
