@@ -10,7 +10,7 @@ export const LatestProjects = () => {
     return (
         <>
             {/* Section Title */}
-            <h2 className="text-3xl mt-8 font-thin font-imfell mb-12 text-center">My Latest Projects</h2>
+            <h2 className="text-3xl mt-8 font-thin font-imfell mb-12 text-center">My Projects</h2>
 
             {/* Swiper Carousel Component */}
             <Swiper

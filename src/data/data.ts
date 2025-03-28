@@ -54,7 +54,7 @@ export const heroData = {
         phone: "+91 9038434364",
     },
     stats: [
-        { title: "YEARS OF EXPERIENCE", stat: "0" },
+        { title: "Certifiactions", stat: "4" },
         { title: "PROJECTS DONE", stat: "5" },
     ],
     profileImage: "/profile.png",
@@ -152,6 +152,37 @@ export const latestProjects = [
         imgAlt: "Player & Team Management System",
         overlayText: "Manage players and teams with a Python-based system.",
         description: "Player & Team Management System (2022)",
+    },
+];
+
+export const Certification = [
+    {
+        href: "#",
+        imgSrc: "images/Certification/innovance.png",
+        imgAlt: "Innovance 3.0 (IOT LAB)",
+        overlayText: "Machine Learning Workshop",
+        description: "Innovance 3.0",
+    },
+    {
+        href: "#",
+        imgSrc: "images/Certification/AISOC.png",
+        imgAlt: "Artificial Intelligence Student Operated Council",
+        overlayText: "Generative AI and Machine Learning Workshop",
+        description: "Symposium 2.0",
+    },
+    {
+        href: "#",
+        imgSrc: "images/Certification/K&K.png",
+        imgAlt: "Kraya & Kuber",
+        overlayText: "Internship with Kraya & Kuber",
+        description: "Internship",
+    },
+    {
+        href: "#",
+        imgSrc: "images/Certification/CST.png",
+        imgAlt: "Cyber Security Internship Training",
+        overlayText: "Machine Learning Workshop",
+        description: "Cyber Security Internship Training",
     },
 ];
 

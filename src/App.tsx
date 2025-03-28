@@ -11,7 +11,8 @@ import Hero from "./components/main/Hero/Hero";
 import {MyAdvantage} from "./components/main/MyAdvantage/MyAdvantage";
 import EducationExperience from "./components/main/EducationExperience/EducationExperience";
 import {LatestProjects} from "./components/main/LatestProjects/LatestProjects";
-import {MailAlice} from "./components/main/MailAlice/MailAlice";
+import {Mail} from "./components/main/Mail/Mail";
+import {Certification} from "./components/main/Certification/Certification";
 
 // Cursor Animation
 import AnimatedCursor from "react-animated-cursor";
@@ -29,8 +30,9 @@ const App = () => {
                 <Section component={<MyAdvantage />} />
                 <Section component={<EducationExperience />} sectionId="LatestProjects" />
                 <Section component={<LatestProjects />} />
+                <Section component={<Certification />} />
                 <br></br><br></br><br></br><br></br>
-                <Section component={<MailAlice />} />
+                <Section component={<Mail />} />
             </main>
             <Footer />
         </div>
