@@ -6,9 +6,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./styles.css";
 import { useState } from 'react';
+import type { Swiper as SwiperType } from 'swiper';
 
 export const Certification = () => {
-    const [swiperInstance, setSwiperInstance] = useState<any>(null);
+    const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     return (
@@ -20,7 +21,7 @@ export const Certification = () => {
                 onMouseLeave={() => swiperInstance?.autoplay?.resume()}
             >
                 <Swiper
-                    onSwiper={(swiper) => setSwiperInstance(swiper)}
+                    onSwiper={(swiper: SwiperType) => setSwiperInstance(swiper)}
                     slidesPerView={1}
                     spaceBetween={10}
                     pagination={{ clickable: false }}
