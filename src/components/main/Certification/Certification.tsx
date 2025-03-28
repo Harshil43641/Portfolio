@@ -1,12 +1,12 @@
 import { Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperContent from "./SwiperContent";
-import { latestProjects } from "../../../data/data";
+import { Certification } from "../../../data/data";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./styles.css";
 
-export const LatestProjects = () => {
+export const Cerifiation = () => {
     return (
         <>
             {/* Section Title */}
@@ -38,16 +38,16 @@ export const LatestProjects = () => {
                     },
                 }}
             >
-                {/* Map over the latestProjects array to create a slide for each project */}
-                {latestProjects.map((project, index) => (
+                {/* Map over the Certificate array to create a slide for each certificate */}
+                {Certification.map((certificate, index) => (
                     <SwiperSlide key={index}>
-                        {/* SwiperContent component that displays project details */}
+                        {/* SwiperContent component that displays certificate details */}
                         <SwiperContent 
-                            href={project.href} 
-                            imgSrc={project.imgSrc} 
-                            imgAlt={project.imgAlt} 
-                            overlayText={project.overlayText} 
-                            description={project.description} 
+                            href={certificate.href} 
+                            imgSrc={certificate.imgSrc} 
+                            imgAlt={certificate.imgAlt} 
+                            overlayText={certificate.overlayText} 
+                            description={certificate.description} 
                         />
                     </SwiperSlide>
                 ))}
